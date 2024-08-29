@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Explora el Mundo con Nosotros</title>
+    <link rel="stylesheet" href="/punto.css">
+    <script src="https://kit.fontawesome.com/cf636d28af.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="header">
+            <a class="boton-header">inicia sesion</a>
+            <a class="boton-header">contactanos</a>
+    </div>
+    <div class="main-content">
+        <div class="section">
+            <div class="header-section">
+                <div class="section-title">Bienvenido a Explora el Mundo</div>
+                <p  class="p-header">Descubre los destinos más fascinantes alrededor del mundo. <br>
+                    Sumérgete en nuestras aventuras que capturan<br>
+                     la esencia de los destinos más impresionantes del mundo. <br>
+                    Deja que las imágenes te inspiren a planificar tu próxima aventura. <br>
+                </p>
+                <button id="Cotiza">Cotiza tu viaje</button>
+                <br>
+                <br>
+                <br>
+                <div class="imgheader">
+                    <img src="/imagenes/playaParadisiaca.jpg" alt="Imagen 1" style="max-width: 300px;">
+                    <img src="/imagenes/montañas-nevadas.jpg" alt="Imagen 2" style="max-width: 300px;">
+                    <img src="/imagenes/selva-tropical.jpg" alt="Imagen 3" style="max-width: 300px;">    
+                </div>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+            </div>           
+            <div class="section-title">Destinos Populares</div>
+            <br>
+            <br>
+            <br>
+            <div class="cards">               
+                <div>
+                    <img src="/imagenes/paris.jpg" alt="París" style="max-width: 300px; height: 250px;">
+                    <h2>París</h2>
+                </div>
+                <div>
+                    <img src="/imagenes/tokio.jpg" alt="Tokyo" style="max-width: 300px; height: 250px;">
+                    <h2>Tokyo</h2>
+                </div>
+                <div>
+                    <img src="/imagenes/rio-de-janeiro.jpg" alt="Río de Janeiro" style="max-width: 300px; height: 250px;">
+                    <h2>Río de Janeiro</h2>
+                </div>
+                <div>
+                    <img src="/imagenes/sidney.jpg" alt="Sídney" style="max-width: 300px; height: 250px;">
+                    <h2>Sídney</h2>
+                </div>
+                <div>
+                    <img src="/imagenes/roma.jpg" alt="Roma" style="max-width: 300px; height: 250px;">
+                    <h2>Roma</h2>
+                </div>
+                <div>
+                    <img src="/imagenes/nueva-york.jpg" alt="Nueva York" style="max-width: 300px; height: 250px;">
+                    <h2>Nueva York</h2>
+                </div>
+                <div>
+                    <img src="/imagenes/ciudad del cabo.jpg" alt="Ciudad del Cabo" style="max-width: 300px; height: 250px;">
+                    <h2>Ciudad del Cabo</h2>
+                </div>
+                <div>
+                    <img src="/imagenes/el-cairo.jpg" alt="El Cairo" style="max-width: 300px; height: 250px;">
+                    <h2>El Cairo</h2>
+                </div>
+            </div>
+                <br>
+                <br>
+                <br>
+        </div>
+        <div class="section">
+            <div class="section-title">Últimos Artículos</div>
+            <br>
+            <br>
+            <div class="cards">
+                <div style="max-width: 700px; height: 600px;">
+                    <img src="/imagenes/consejos-de-viajes.jpg" alt="Artículo 1" style="max-width: 700px; height: 400px;">
+                    <h2>Consejos para Viajar a Europa</h2>
+                    <p>Descubre los mejores consejos para disfrutar de un viaje sin complicaciones por Europa. Desde qué empacar hasta las mejores rutas.</p>
+                </div>
+                <div style="max-width: 700px; height: 500px;">
+                    <img src="/imagenes/comida-africa.jpg" alt="Artículo 2" style="max-width: 700px; height: 400px;">
+                    <h2>Sabores del Sudeste Asiático</h2>
+                    <p>Explora la diversidad culinaria del sudeste asiático, desde el picante curry tailandés hasta los frescos rollitos vietnamitas.</p>
+                </div>
+                <div style="max-width: 700px; height: 500px;">
+                    <img src="/imagenes/safari-africa.jpg" alt="Artículo 3" style="max-width: 700px; height: 400px;">
+                    <h2>Safari en África: Lo que Necesitas Saber</h2>
+                    <p>Embárcate en la aventura de tu vida con estos consejos esenciales para un safari inolvidable en África.</p>
+                </div>
+                <div style="max-width: 700px; height: 500px;">
+                    <img src="/imagenes/escapadas urbanas.jpg" alt="Artículo 4" style="max-width: 700px; height: 400px;">
+                    <h2>Las Mejores Escapadas Urbanas</h2>
+                    <p>Descubre las ciudades que ofrecen la combinación perfecta de cultura, gastronomía y entretenimiento.</p>
+                </div>
+            </div>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+        </div>
+        <div class="section">
+            <div class="section-title">Carrusel de Imágenes</div>
+            <br>
+            <br>
+
+            <div class="carousel">
+                    <div class="slides">
+                        <img src="/imagenes/destino1.jpg" alt="Imagen 1">
+                        <img src="/imagenes/destino2.jpg" alt="Imagen 2">
+                        <img src="/imagenes/destino3.jpg" alt="Imagen 3">
+                    </div>
+                    <div class="carousel-buttons">
+                        <button id="prev">&#10094;</button>
+                        <button id="next">&#10095;</button>
+                    </div>
+                </div>
+            
+                <script>
+                    const slides = document.querySelector('.slides');
+                    const prevButton = document.getElementById('prev');
+                    const nextButton = document.getElementById('next');
+                    let currentIndex = 0;
+            
+                    function showSlide(index) {
+                        const slideWidth = slides.querySelector('img').clientWidth;
+                        slides.style.transform = `translateX(${-index * slideWidth}px)`;
+                    }
+            
+                    prevButton.addEventListener('click', () => {
+                        currentIndex = (currentIndex > 0) ? currentIndex - 1 : slides.childElementCount - 1;
+                        showSlide(currentIndex);
+                    });
+            
+                    nextButton.addEventListener('click', () => {
+                        currentIndex = (currentIndex < slides.childElementCount - 1) ? currentIndex + 1 : 0;
+                        showSlide(currentIndex);
+                    });
+            
+                    window.addEventListener('resize', () => showSlide(currentIndex));
+                </script>
+               
+            </div>
+        </div>
+        <div class="profile-section">
+            <div class="profile-text">
+                <h3>Agente de Viajes Especializado</h3>
+                <p>Con más de 10 años de experiencia, nuestros agentes te ayudarán a planificar el viaje perfecto, desde la elección del destino hasta los detalles más pequeños.</p>
+            </div>
+        </div>   
+    </div>
+    <div class="footer">
+        <div class="icons">
+            <i class="fa-brands fa-facebook fa-bounce" id="facebook"></i>
+            <i class="fa-brands fa-instagram fa-bounce" id="instagram"></i>
+            <i class="fa-brands fa-airbnb fa-bounce" id="airbnb" ></i>
+        </div>
+        <div class="p-footer">
+            <p>&copy; 2024 Explora el Mundo. Todos los derechos reservados.</p>
+        </div>
+    </div>
+</body>
+</html>
